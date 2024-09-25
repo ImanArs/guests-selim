@@ -1,8 +1,15 @@
 .root {
+  margin: 30px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
+
+button {
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
 .guest {
   display: flex;
   flex-direction: column;
@@ -12,4 +19,11 @@
   padding: 10px;
   display: flex;
   justify-content: space-between;
+
+}
+.guest button {
+  background: #ec7777;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: white;
 }

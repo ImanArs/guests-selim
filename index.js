@@ -21,19 +21,19 @@ getData()
 
 const getColor = (status) => {
   if (status.includes('Затрудняюсь')) {
-    return 'purple'
+    return '#800080'
   } else if (status.includes('Смогу')) {
-    return 'green'
+    return '#008000'
   } else if (status.includes('Не смогу')) {
-    return 'red'
+    return '#ff0000'
   } 
 }
 
 function cardFunc (item) {
   return `
-  <div class="guest" style="border-color: ${getColor(item.status)}">
+  <div class="guest" style="border-color: ${getColor(item.status)}; background: ${getColor(item.status)}10">
       <p>${item.name}</p>
-      <p style="color: ${getColor(item.status)}">${item.status}</p>
+      <p>${item.status}</p>
       <button onclick="handleDel(${item.id})">delete</button>
   </div>
   `
