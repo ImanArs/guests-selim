@@ -1,0 +1,15 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.guest {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
